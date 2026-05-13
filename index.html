@@ -681,7 +681,6 @@
                     <form id="productForm">
                         <div class="grid-2">
                             <div><label>Product Name *</label><input name="productName" value="${escapeHtml(product?.['Product Name'] || '')}" required></div>
-                            <div><label>Category</label><input name="category" value="${escapeHtml(product?.Category || '')}"></div>
                             <div><label>Title of BioStimulant</label><input name="brand" value="${escapeHtml(product?.Brand || '')}"></div>
                             <div><label>Liquid line</label><input name="company" value="${escapeHtml(product?.Company || '')}"></div>
                             <div><label>Gazette Notification No</label><input name="batch" value="${escapeHtml(product?.['Batch Number'] || '')}"></div>
@@ -700,6 +699,7 @@
                             <div><label>Dose</label><input name="dose" value="${escapeHtml(product?.Dose || '')}"></div>
                             <div><label>Crop</label><input name="crop" value="${escapeHtml(product?.Crop || '')}"></div>
                         </div>
+                        <h4> OPTIONAL  </h4>
                         <div><label>Usage Instructions</label><textarea name="usageInstructions" rows="2">${escapeHtml(product?.['Usage Instructions'] || '')}</textarea></div>
                         <div><label>Storage Instructions</label><textarea name="storageInstructions" rows="2">${escapeHtml(product?.['Storage Instructions'] || '')}</textarea></div>
                         <div><label>Warning Notes</label><textarea name="warningNotes" rows="2">${escapeHtml(product?.['Warning Notes'] || '')}</textarea></div>
